@@ -8,7 +8,8 @@ import bodyParser from 'body-parser';
 import corsOptions from './corsConfig.js'; // Import the CORS configuration
 import transferRoutes from './Routes/transferRoutes.js';
 import softcodeRoutes from './Routes/softcodeRoutes.js'
-import adminTransactionRoutes from './Routes/addadmintransactionRoutes.js'; 
+import addAdminTransactionRoutes from './Routes/addadmintransactionRoutes.js';
+
 
 
 dotenv.config();
@@ -37,7 +38,7 @@ app.use('/api/transfer', transferRoutes);
 
 app.use('/api/softcode', softcodeRoutes);
 
-app.use('/api/addadmin', adminTransactionRoutes);
+app.use('/api/addadmin', addAdminTransactionRoutes);
 
 
 // Error Handling Middleware
